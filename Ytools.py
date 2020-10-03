@@ -9,20 +9,6 @@ import os,time
 import random
 import sys
 
-
-#Efek typewriter
-def type(s):
-    for c in s + '\n':
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        time.sleep(random.random() * 0.01)
-
-def tyck(s):
-    for c in s + '\n':
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        time.sleep(random.random() * 0.1)
-
 #Pemilihan OS (Ga Ada gunanya sih:v)
 print("Operating system list : ")
 print('1. Linux')
@@ -39,12 +25,12 @@ else :
 	print("[!] Input Salah")
 	sys.exit("[!] Mengeluarkan...")
 #Banner ASCII ART
-type("██╗   ██╗████████╗████████╗ ██████╗  ██████╗ ██╗     ███████╗")
-type("╚██╗ ██╔╝╚══██╔══╝╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝")
-type(" ╚████╔╝    ██║█████╗██║   ██║   ██║██║   ██║██║     ███████╗")
-type("  ╚██╔╝     ██║╚════╝██║   ██║   ██║██║   ██║██║     ╚════██║")
-type("   ██║      ██║      ██║   ╚██████╔╝╚██████╔╝███████╗███████║ By")
-type("   ╚═╝      ╚═╝      ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝  9E(IQZpesial)")
+print("██╗   ██╗████████╗████████╗ ██████╗  ██████╗ ██╗     ███████╗")
+print("╚██╗ ██╔╝╚══██╔══╝╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝")
+print(" ╚████╔╝    ██║█████╗██║   ██║   ██║██║   ██║██║     ███████╗")
+print("  ╚██╔╝     ██║╚════╝██║   ██║   ██║██║   ██║██║     ╚════██║")
+print("   ██║      ██║      ██║   ╚██████╔╝╚██████╔╝███████╗███████║ By")
+print("   ╚═╝      ╚═╝      ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝  9E(IQZpesial)")
 
 #MAIN MENU
 print("Menu :")
@@ -59,8 +45,8 @@ menu = input("Pilihan : ")
 if menu == '1' or menu == '01':
 	print("Contoh : https://www.youtube.com/watch?v=AdBnKSqGAVA")
 	video_link = input('\033[94m Masukan Link Video : ')
-	tyck("[+] Sabar Boz Video na Lagi di Download")
-	tyck("[+] Downloading")
+	print("[+] Sabar Boz Video na Lagi di Download")
+	print("[+] Downloading")
 	yt = pytube.YouTube(video_link)
 	videos = yt.streams.first()
 	videos.download('Hasil')
@@ -90,8 +76,8 @@ if menu == '2' or menu == '02':
 
 #tentang kami kelas 9e
 if menu == '9' or menu == '09':
-	tyck("	[<3] SEBUAH SHORTCUT TOOLS YOUTUBE [<3]")
-	tyck("	[<3]  DENGAN MENGGUNAKAN PYTHON 3  [<3]")
+	print("	[<3] SEBUAH SHORTCUT TOOLS YOUTUBE [<3]")
+	print("	[<3]  DENGAN MENGGUNAKAN PYTHON 3  [<3]")
 
 	print("[+] Package yang digunakan : ")
 	print("[1] pytube")
@@ -108,8 +94,8 @@ if menu == '9' or menu == '09':
 	print("[?] Ga ada Copyright, 9E Z/SpensA , est 2k19")
 
 if menu == '0' or menu == '00':
-	tyck("[!] Terimakasih sudah menggunakan tools ini")
-	tyck("[!] Tetap santuy.")
+	print("[!] Terimakasih sudah menggunakan tools ini")
+	print("[!] Tetap santuy.")
 	time.sleep(1)
 	print("[!] Mengeluarkan...")
 	sys.exit
