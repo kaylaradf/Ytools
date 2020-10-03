@@ -9,21 +9,6 @@ import os,time
 import random
 import sys
 
-#Pemilihan OS (Ga Ada gunanya sih:v)
-print("Operating system list : ")
-print('1. Linux')
-print('2. Windows')
-time.sleep(1)
-OS = input("Pilih Operating system anda : ")
-time.sleep(1)
-
-if OS == '1' or OS == 'Linux' or OS == 'linux' :
-	os.system("clear")
-if OS == '2' or OS ==  'Windows' or OS == 'windows' :
-	os.system("cls")
-else :
-	print("[!] Input Salah")
-	sys.exit("[!] Mengeluarkan...")
 #Banner ASCII ART
 print("██╗   ██╗████████╗████████╗ ██████╗  ██████╗ ██╗     ███████╗")
 print("╚██╗ ██╔╝╚══██╔══╝╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝")
