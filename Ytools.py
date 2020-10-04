@@ -10,12 +10,7 @@ import random
 import sys
 
 #Banner ASCII ART
-print("██╗   ██╗████████╗████████╗ ██████╗  ██████╗ ██╗     ███████╗")
-print("╚██╗ ██╔╝╚══██╔══╝╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝")
-print(" ╚████╔╝    ██║█████╗██║   ██║   ██║██║   ██║██║     ███████╗")
-print("  ╚██╔╝     ██║╚════╝██║   ██║   ██║██║   ██║██║     ╚════██║")
-print("   ██║      ██║      ██║   ╚██████╔╝╚██████╔╝███████╗███████║ By")
-print("   ╚═╝      ╚═╝      ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝  9E(IQZpesial)")
+print("YTOOLS BY ME")
 
 #MAIN MENU
 print("Menu :")
@@ -37,6 +32,7 @@ if menu == '1' or menu == '01':
 	videos.download('Hasil')
 	print("[!] Video telah di Download")
 	print("[!] File saved in YT-Tools/Hasil")
+
 #DOWNLOAD AUDIO YOUTUBE DENGAN PACKAGE YOUTUBE_DL
 if menu == '2' or menu == '02':
 	video_link = input('\033[94m Masukan Link Video : ')
