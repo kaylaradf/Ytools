@@ -9,6 +9,9 @@ import os,time
 import random
 import sys
 
+#Banner ASCII ART
+print("YTOOLS BY ME")
+
 #MAIN MENU
 print("Menu :")
 print("[01] Youtube Video Downloader")
@@ -29,6 +32,7 @@ if menu == '1' or menu == '01':
 	videos.download('Hasil')
 	print("[!] Video telah di Download")
 	print("[!] File saved in YT-Tools/Hasil")
+
 #DOWNLOAD AUDIO YOUTUBE DENGAN PACKAGE YOUTUBE_DL
 if menu == '2' or menu == '02':
 	video_link = input('\033[94m Masukan Link Video : ')
