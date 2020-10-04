@@ -11,9 +11,8 @@ import sys
 
 #MAIN MENU
 print("Menu :")
-print("[01] Youtube Video Downloader")
-print("[02] Audio Youtube Downloader")
-print("[09] About")
+print("[01] Youtube Mp4 Video Downloader")
+print("[02] Audio Mp3 Youtube Downloader")
 print("[00] Keluar")
 time.sleep(1)
 
@@ -50,25 +49,6 @@ if menu == '2' or menu == '02':
 	with youtube_dl.YoutubeDL(ydl_opts) as ydl:
 		ydl.download([video_link])
 		print("[!] telah didownload")
-
-#tentang kami kelas 9e
-if menu == '9' or menu == '09':
-	print("	[<3] SEBUAH SHORTCUT TOOLS YOUTUBE [<3]")
-	print("	[<3]  DENGAN MENGGUNAKAN PYTHON 3  [<3]")
-
-	print("[+] Package yang digunakan : ")
-	print("[1] pytube")
-	print("[2] youtube_dl")
-	time.sleep(1)
-	print("")
-	print("[+] Team Xzrcty : ")
-	print("[1] HydraXZone")
-	print("[2] IDKQWEAS")
-	print("[3] IQZpesial")
-	time.sleep(1)
-	print("")
-	print("[?] Find this script in https://github.com/qxzcerty")
-	print("[?] Ga ada Copyright, 9E Z/SpensA , est 2k19")
 
 if menu == '0' or menu == '00':
 	print("[!] Terimakasih sudah menggunakan tools ini")
